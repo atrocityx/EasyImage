@@ -76,7 +76,7 @@ public class EasyImage implements Constants {
     private static Intent createDocumentsIntent(@NonNull Context context, int type) {
         storeType(context, type);
         Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-        intent.setType("image/*");
+        intent.setType("image/* video/*");
         return intent;
     }
 
